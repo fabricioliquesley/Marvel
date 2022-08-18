@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+    <link rel="stylesheet" href="style/filmes.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <h1>FILMES MAIS RECENTES</h1>
+    <div class="carrossel">
+        <div class="mover">
+            <button class="icon" onclick="scrollr()"><i class='bx bx-chevrons-left'></i></button>
+        </div>
+        <div class="cover">
+            <div class="scroll-images">
+                <div class="child th">
+                    <div class="rodape">
+                        <span>
+                            Thor: Amor e Trovão
+                            <p>
+                                O Deus do Trovão entrarar numa jornada diferente de tudo o que já enfrentou - a procura pela paz interior. Mas a reforma de Thor é interrompida por um assassino galáctico conhecido como Gorr, o Carniceiro dos Deuses, que procura a extinção dos deuses.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="child vn">
+                    <div class="rodape">
+                        <span>
+                            Venom: Tempo de Carnificina
+                            <p>
+                                O relacionamento entre Eddie e Venom está evoluindo. Buscando a melhor forma de lidar com a inevitável simbiose, esse dois lados descobrem como viver juntos e, de alguma forma, se tornarem melhores juntos do que separados.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="child av">
+                    <div class="rodape">
+                        <span>
+                            Vingadores: Ultimato
+                            <p>
+                                Após Thanos eliminar metade das criaturas vivas, os Vingadores têm de lidar com a perda de amigos e entes queridos. Com Tony Stark vagando perdido no espaço sem água e comida, Steve e Natasha lideram a resistência contra o titã louco.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="child bw">
+                    <div class="rodape">
+                        <span>
+                            Viúva Negra
+                            <p>
+                                Ao nascer, a Viúva Negra, então conhecida como Natasha Romanova, é entregue à KGB, que a prepara para se tornar sua agente suprema. Porém, o seu próprio governo tenta matá-la quando a União Soviética se desfaz.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="child sm">
+                    <div class="rodape">
+                        <span>
+                            Homem-Aranha 3
+                            <p>
+                                O Homem-Aranha precisa lidar com as consequências da sua verdadeira identidade ter sido descoberta.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+                <div class="child cm">
+                    <div class="rodape">
+                        <span>
+                            Capitã Marvel
+                            <p>
+                                Capitã Marvel, encontra-se no meio de uma batalha entre seu povo e os Skrulls. Ao tentar impedir uma invasão de larga escala na Terra, em 1995, ela tem memórias recorrentes de uma outra vida.
+                            </p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mover">
+            <button class="icon" onclick="scrolll()"><i class='bx bx-chevrons-right'></i></i></button>
+        </div>
+    </div>
+</body>
+<script>
+    function scrolll(){
+        var left = document.querySelector(".scroll-images");
+        left.scrollBy(600, 0);
+    }
+    function scrollr(){
+        var right = document.querySelector(".scroll-images");
+        right.scrollBy(-600, 0);
+    }
+</script>
+</html>

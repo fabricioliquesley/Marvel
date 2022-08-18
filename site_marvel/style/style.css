@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;;
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    background: gray;
+    width: 90px;
+    height: 100vh;
+    transition: 0.5s;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+nav:hover {
+    width: 300px;
+}
+
+nav .search {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+nav .search > input{
+    height: 30px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    opacity: 0;
+}
+
+nav:hover .search > input {
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+}
+
+nav .lista {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    list-style: none;
+}
+
+nav .lista a {
+    text-decoration: none;
+}
+
+nav .item {
+    display: flex;
+    cursor: pointer;
+    padding: 0 24px;
+    height: 80px;
+    line-height: 80px;
+    text-align: left;
+    align-items: center;
+}
+
+nav .item:hover {
+    background: rgba(255, 255, 255, .1);
+    border-left: 5px solid #ed1d24;
+}
+
+nav .item i {
+    margin: 0 15px 0 6px;
+    font-size: 26px;
+    color: #555454;
+}
+
+nav:hover .item i {
+    color: white;
+}
+
+nav .lista span {
+    color: white;
+    font-size: 18px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+nav:hover .lista span {
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .2s;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    background: #ed1d24;
+}
+
+header > img {
+    width: 200px;
+    text-align: center;
+    margin: 9px auto;
+}
+
+main {
+    display: flex;
+    background: url('../images/fundo.jpg');
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main .noticias {
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    padding: 0 20px 0;
+    min-height: 100vh;
+}
+
+main .post {
+    background-color: white;
+    margin-top: 5%;
+    padding: 20px;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+main .post > h1 {
+    text-align: center;
+    margin: 20px 20px 0 20px;
+    color: green;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.post .vsw {
+    color: #0687d1;
+}
+
+.post .cm {
+    color: #e4af00;
+}
+
+main .post > img {
+    display: flex;
+    align-items: center;
+    margin: 40px auto;
+    width: 90%;
+}
+
+main .post > p {
+    margin: 35px 20px 0 20px;
+    text-align: justify;
+    font-size: 1.1em;
+}
+
+.post > a {
+    text-decoration: none;
+    justify-content: center;
+}
+
+main .btn {
+    background: gray;
+    color: white;
+    text-align: center;
+    width: 170px;
+    height: 30px;
+    margin: 60px auto 70px auto;
+    padding-top: 14px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ed1d24;
+}
+
+main .fim {
+    margin-bottom: 100px;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding-right: 110px;
+    padding-left: 110px;
+}
+
+footer > img {
+    width: 200px;
+    margin-top: 50px;
+}
+
+footer > P {
+    color: white;
+    margin-top: 40px;
+}
+
+footer ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer li {
+    padding: 20px;
+}
+
+footer li > i {
+    font-size: 26px;
+    color: #555454;
+}
+
+footer li > i:hover {
+    color: white;
+}
+
+footer .termos > a {
+    color: #555454;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer .termos > a:hover {
+    color: white;
+}
+
+footer .termos_2 > a {
+    color: #555454;
+    text-decoration: none;
+    font-size: small;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer .termos_2 > a:hover {
+    color: white;
+}
+
+footer .termos_2 > li {
+    color: #555454;
+    font-size: small;
+}
+
+@media screen and (max-width: 430px){
+
+
+    nav {
+        width: 50px;
+        height: 100%;
+    }
+
+    nav .lista {
+        position: absolute;
+        width: 100%;
+        top: 15%;
+        list-style: none;
+    }
+
+    nav .item {
+        padding: 0 7px;
+    }
+
+    header > img {
+        width: 150px;
+        margin-left: 125px;
+    }
+    
+    main {
+        display: block;
+        background: url('../images/fundo.jpg');
+        min-height: 100vh;
+    }
+
+    main .noticias {
+        /* background: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0 0 0;
+        min-height: 100vh;
+    }
+    
+    main .post {
+        background-color: white;
+        margin-top: 0%;
+        padding: 20px 0px 20px 35px;
+        width: 90%;
+        border-radius: 0px;
+        border-bottom: 1px solid #555454;
+    }
+
+    main .post > h1 {
+        text-align: center;
+        /* margin: 20px 20px 0 20px; */
+        margin-left: 35px;
+        color: green;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    main .post > img {
+        display: flex;
+        align-items: center;
+        margin: 30px auto 0px 35px;
+        width: 83%;
+    }
+
+    main .post > p {
+        /* margin: 35px 20px 0 20px; */
+        margin-left: 35px;
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    main .fim {
+        margin-bottom: 0px;
+    }
+
+    footer {
+        background: black;
+        text-align: center;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    footer > img {
+        width: 150px;
+        margin-top: 30px;
+        margin-left: 47px;
+    }
+
+    footer > P {
+        color: white;
+        margin-top: 20px;
+        margin-left: 50px;
+    }
+
+    main .btn {
+        margin: 60px auto 70px 85px;
+    }
+
+    footer .redes {
+        padding-left: 50px;
+        margin-top: 20px
+    }
+
+    footer li > i {
+        font-size: 25px;
+    }
+
+    footer .termos {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    footer .termos_2 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+
+    footer .termos > a {
+        margin-top: 5px;
+    }
+
+    footer .termos_2 > a {
+        margin-bottom: 0px;
+    }
+
+    footer .termos_2 > li {
+        margin-bottom: 30px;
+    }
+
+    footer li {
+        padding: 0;
+        padding-bottom: 5px;
+    }
+}
