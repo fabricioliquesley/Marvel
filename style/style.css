@@ -284,7 +284,7 @@ footer .termos_2 > li {
         justify-content: space-around;
         position: absolute;
         width: 100%;
-        top: 40%;
+        top: 55%;
         list-style: none;
     }
 
@@ -295,6 +295,22 @@ footer .termos_2 > li {
 
     nav .item {
         padding: 0 7px;
+    }
+
+    nav .item {
+        display: flex;
+        cursor: pointer;
+        padding: 0 20px 0 20px;
+        height: 40px;
+        line-height: 80px;
+        text-align: left;
+        align-items: center;
+    }
+    
+    nav .item:hover {
+        background: rgba(255, 255, 255, .1);
+        border-left: none;
+        border-bottom: 5px solid #ed1d24;
     }
 
     nav .item i {
