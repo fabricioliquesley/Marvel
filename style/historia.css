@@ -39,7 +39,7 @@ main {
 main .conteudo {
     background: var(--cor01);
     margin: 30px auto;
-    padding: 25px;
+    padding: 50px;
     width: 60%;
 }
 
