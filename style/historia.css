@@ -1,26 +1,26 @@
-body {
-    background: gray;
-    color: rgb(32, 32, 32);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --font_padrao: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    background: #ed1d24;
+}
+
+header > img {
+    width: 200px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-h1 {
-    margin-top: 350px;
-    font-size: 3em
-}
-
-i {
-    font-size: 100px;
+    margin: 9px auto;
 }
 
 @media screen and (max-width: 430px) {
-    h1 {
-        margin-top: 300px;
-        font-size: 2em;
-    }
-
-    i {
-        font-size: 50px;
-    }
+    
 }
