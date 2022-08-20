@@ -6,6 +6,7 @@
     --cor01: #ffffff;
     --cor02: #000000;
     --cor03: #ed1d24;
+    --cor04: #047a3a;
 }
 
 * {
@@ -15,6 +16,7 @@
 
 body {
     font-family: var(--font_padrao);
+    background: var(--cor00);
 }
 
 header {
@@ -27,6 +29,33 @@ header > img {
     width: 200px;
     text-align: center;
     margin: 9px auto;
+}
+
+main {
+    background: var(--cor00);
+    min-height: 100vh;
+}
+
+main .conteudo {
+    background: var(--cor01);
+    margin: 30px auto;
+    padding: 25px;
+    width: 60%;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--cor04);
+    font-size: 2em;
+}
+
+main p {
+    text-align: justify;
+    margin-top: 15px;
+}
+
+main p > b {
+    color: #047a3a;
 }
 
 @media screen and (max-width: 430px) {
