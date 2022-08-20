@@ -38,7 +38,7 @@ main {
 
 main .conteudo {
     background: var(--cor01);
-    margin: 30px auto;
+    margin: 30px auto 0px;
     padding: 50px;
     width: 60%;
 }
@@ -71,6 +71,72 @@ main .conteudo .herois {
 main a {
     text-decoration: none;
     color: #047a3a;
+}
+
+footer {
+    background: black;
+    text-align: center;
+    padding-right: 110px;
+    padding-left: 110px;
+}
+
+footer > img {
+    width: 200px;
+    margin-top: 50px;
+}
+
+footer > P {
+    color: white;
+    margin-top: 40px;
+}
+
+footer ul {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer li {
+    padding: 20px;
+}
+
+footer li > i {
+    font-size: 26px;
+    color: #555454;
+}
+
+footer li > i:hover {
+    color: white;
+}
+
+footer .termos > a {
+    color: #555454;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer .termos > a:hover {
+    color: white;
+}
+
+footer .termos_2 > a {
+    color: #555454;
+    text-decoration: none;
+    font-size: small;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+footer .termos_2 > a:hover {
+    color: white;
+}
+
+footer .termos_2 > li {
+    color: #555454;
+    font-size: small;
 }
 
 @media screen and (max-width: 430px) {
