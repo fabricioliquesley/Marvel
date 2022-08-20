@@ -58,6 +58,21 @@ main p > b {
     color: #047a3a;
 }
 
+main .conteudo > img {
+    display: flex;
+    margin: 30px auto;
+    width: 200px;
+}
+
+main .conteudo .herois {
+    width: 100%;
+}
+
+main a {
+    text-decoration: none;
+    color: #047a3a;
+}
+
 @media screen and (max-width: 430px) {
     
 }
